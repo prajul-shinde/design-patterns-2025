@@ -12,7 +12,6 @@ public class Demo {
 
         document = new Document("c", "roboto", 17);
 
-        history.getStates().forEach(System.out::println);
         document.restore(history.pop());
         document.restore(history.pop());
         System.out.println(document);
